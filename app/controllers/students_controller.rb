@@ -1,8 +1,5 @@
-class StudentsController < ApplicationController
-  before_action :set_student, only: [:show, :edit, :update, :destroy]
+class StudentController < ApplicationController
 
-  # GET /students
-  # GET /students.json
   def index
     @students = Student.all
   end
